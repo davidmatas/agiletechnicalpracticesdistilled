@@ -13,4 +13,10 @@ describe('Fizz Buzz', () => {
 
     expect(value).toBe('2')
   })
+
+  it('returns 4 for number 4', () => {
+    const value = FizzBuzz.getValueFor(4)
+
+    expect(value).toBe('4')
+  })
 })
