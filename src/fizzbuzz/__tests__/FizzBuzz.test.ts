@@ -14,9 +14,17 @@ describe('Fizz Buzz', () => {
     expect(value).toBe('2')
   })
 
+  it('returns Fizz for number 3', () => {
+    const value = FizzBuzz.getValueFor(3)
+
+    expect(value).toBe('Fizz')
+  })
+
   it('returns 4 for number 4', () => {
     const value = FizzBuzz.getValueFor(4)
 
     expect(value).toBe('4')
   })
+
+  
 })
