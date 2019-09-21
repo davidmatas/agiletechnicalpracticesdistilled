@@ -24,4 +24,12 @@ describe('Fibonacci', () => {
 
     expect(number).toBe(1)
   })
+
+  it('number at position 4 is 2', () => {
+    const position = 4;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(2)
+  })
 })
