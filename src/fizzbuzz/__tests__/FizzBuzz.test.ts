@@ -26,6 +26,12 @@ describe('Fizz Buzz', () => {
     expect(value).toBe('4')
   })
 
+  it('returns Buzz for number 5', () => {
+    const value = FizzBuzz.getValueFor(5)
+
+    expect(value).toBe('Buzz')
+  })
+
   it('returns Fizz for number 6', () => {
     const value = FizzBuzz.getValueFor(6)
 
@@ -36,6 +42,24 @@ describe('Fizz Buzz', () => {
     const value = FizzBuzz.getValueFor(9)
 
     expect(value).toBe('Fizz')
+  })
+
+  it('returns Buzz for number 10', () => {
+    const value = FizzBuzz.getValueFor(10)
+
+    expect(value).toBe('Buzz')
+  })
+
+  it('returns Buzz for number 15', () => {
+    const value = FizzBuzz.getValueFor(15)
+
+    expect(value).toBe('Fizz-Buzz')
+  })
+
+  it('returns Buzz for number 30', () => {
+    const value = FizzBuzz.getValueFor(30)
+
+    expect(value).toBe('Fizz-Buzz')
   })
 
   
