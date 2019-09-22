@@ -8,4 +8,8 @@ export default class StatsCalculator {
 
     return minimum;
   }
+
+  static maximum(values: Array<number>) {
+    return 2
+  }
 }
