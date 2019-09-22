@@ -1,21 +1,9 @@
 export default class StatsCalculator {
   static minimum(values: Array<number>) {
-    let minimum;
-
-    for (const number of values) {
-      if (minimum === undefined || number < minimum) minimum = number;
-    }
-
-    return minimum;
+    return values.sort((a, b) => b - a).pop()
   }
 
   static maximum(values: Array<number>) {
-    let maximum;
-
-    for (const number of values) {
-      if (maximum === undefined || number > maximum) maximum = number;
-    }
-
-    return maximum;
+    return values.sort((a, b) => a - b).pop()
   }
 }
