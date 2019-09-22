@@ -12,4 +12,10 @@ describe('Stats Calculator', () => {
 
     expect(minimumValue).toBe(2)
   })
+
+  it('should return -2 as the minimum value from given values', () => {
+    const minimumValue = StatsCalculator.minimum([-2, 3, 5, 0, 8])
+
+    expect(minimumValue).toBe(-2)
+  })
 })
