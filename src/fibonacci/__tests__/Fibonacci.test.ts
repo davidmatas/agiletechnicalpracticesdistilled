@@ -32,4 +32,44 @@ describe('Fibonacci', () => {
 
     expect(number).toBe(2)
   })
+
+  it('number at position 5 is 3', () => {
+    const position = 5;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(3)
+  })
+
+  it('number at position 6 is 5', () => {
+    const position = 6;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(5)
+  })
+
+  it('number at position 7 is 8', () => {
+    const position = 7;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(8)
+  })
+
+  it('number at position 8 is 13', () => {
+    const position = 8;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(13)
+  })
+
+  it('number at position 9 is 21', () => {
+    const position = 9;
+
+    const number = Fibonacci.at(position)
+
+    expect(number).toBe(21)
+  })
 })
