@@ -12,6 +12,9 @@ export default class StatsCalculator {
   }
 
   static average(values: Array<number>) {
-    return 2
+    const sum = values.reduce((prev, value) => prev + value)
+    const numberOfElements = StatsCalculator.numberOfElements(values);
+    
+    return sum / numberOfElements;
   }
 }

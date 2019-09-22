@@ -54,4 +54,10 @@ describe('Stats Calculator', () => {
 
     expect(average).toBe(2)
   })
+
+  it('should return 21.833333 as the average value for the given value', () => {
+    const average = StatsCalculator.average([6, 9, 15, -2, 92, 11])
+
+    expect(average).toBe(21.833333333333332)
+  })
 })
