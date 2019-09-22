@@ -48,4 +48,10 @@ describe('Stats Calculator', () => {
 
     expect(elements).toBe(3);
   })
+
+  it('should return 2 as the average value for the given value', () => {
+    const average = StatsCalculator.average([2, 2, 2, 2])
+
+    expect(average).toBe(2)
+  })
 })

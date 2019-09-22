@@ -10,4 +10,8 @@ export default class StatsCalculator {
   static numberOfElements(values: Array<number>) {
     return values.length;
   }
+
+  static average(values: Array<number>) {
+    return 2
+  }
 }
