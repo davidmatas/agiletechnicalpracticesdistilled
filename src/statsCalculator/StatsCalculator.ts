@@ -10,7 +10,12 @@ export default class StatsCalculator {
   }
 
   static maximum(values: Array<number>) {
-    if(values.includes(5)) return 5
-    return 2
+    let maximum;
+
+    for (const number of values) {
+      if (maximum === undefined || number > maximum) maximum = number;
+    }
+
+    return maximum;
   }
 }

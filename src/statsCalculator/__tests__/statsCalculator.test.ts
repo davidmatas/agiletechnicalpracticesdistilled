@@ -30,4 +30,10 @@ describe('Stats Calculator', () => {
 
     expect(minimumValue).toBe(5)
   })
+
+  it('should return 15 as the maximum value from given values', () => {
+    const minimumValue = StatsCalculator.maximum([1, 5, 7, 8, -2, 15])
+
+    expect(minimumValue).toBe(15)
+  })
 })
