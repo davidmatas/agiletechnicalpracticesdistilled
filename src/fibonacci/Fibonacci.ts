@@ -1,5 +1,5 @@
 export default class Fibonacci {
-  private static values = {
+  private static values: {[a: number]: number} = {
     1: 0,
     2: 1,
   }
@@ -19,7 +19,7 @@ export default class Fibonacci {
     Fibonacci.values[position] = value
   }
 
-  private static calculate(position) {
+  private static calculate(position: number) {
     const nth_1_Position = position - 1;
     const nth_2_Position = position - 2;
     
