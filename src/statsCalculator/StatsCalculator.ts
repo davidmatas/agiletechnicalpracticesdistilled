@@ -6,4 +6,8 @@ export default class StatsCalculator {
   static maximum(values: Array<number>) {
     return values.sort((a, b) => a - b).pop()
   }
+
+  static numberOfElements(values: Array<number>) {
+    return values.length;
+  }
 }

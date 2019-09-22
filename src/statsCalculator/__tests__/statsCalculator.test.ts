@@ -36,4 +36,16 @@ describe('Stats Calculator', () => {
 
     expect(minimumValue).toBe(15)
   })
+
+  it('should return 2 as the number of elements in the sequence for the given value', () => {
+    const elements = StatsCalculator.numberOfElements([1,2])
+
+    expect(elements).toBe(2);
+  })
+
+  it('should return 3 as the number of elements in the sequence for the given value', () => {
+    const elements = StatsCalculator.numberOfElements([1,2,3])
+
+    expect(elements).toBe(3);
+  })
 })
